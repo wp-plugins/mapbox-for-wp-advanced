@@ -1,0 +1,1066 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: mapboxadv\n"
+"POT-Creation-Date: 2015-04-16 09:39+0100\n"
+"PO-Revision-Date: 2015-04-16 09:39+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.5\n"
+"X-Poedit-Basepath: ../\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Poedit-KeywordsList: _e;_e();__;__()\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *js\n"
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:47
+#: built/mapboxaforwpadvanced/mapboxadv.php:48
+#: built/mapboxaforwpadvanced/mapboxadv.php:49
+#: built/mapboxaforwpadvanced/mapboxadv.php:50
+#: built/mapboxaforwpadvanced/mapboxadv.php:51
+#: built/mapboxaforwpadvanced/mapboxadv.php:54
+#: built/mapboxaforwpadvanced/mapboxadv.php:55
+#: built/mapboxaforwpadvanced/mapboxadv.php:56
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:47
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:48
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:49
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:50
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:51
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:54
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:55
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:56 mapboxadv.php:73
+#: mapboxadv.php:74 mapboxadv.php:76 mapboxadv.php:81 mapboxadv.php:85
+#: mapboxadv.php:87 mapboxadv.php:89 mapboxadv.php:93
+msgid "MapBox for Wordpress Advanced"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:48
+#: built/mapboxaforwpadvanced/mapboxadv.php:217
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:174
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:48
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:217
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:174
+#: mapboxadv.php:74 mapboxadv.php:255 mapboxwidgetadv.php:186
+msgid "General"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:49
+#: built/mapboxaforwpadvanced/mapboxadv.php:227
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:49
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:227
+#: premium/mapboxmaps.php:199
+msgid "Map"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:50
+#: built/mapboxaforwpadvanced/mapboxadv.php:230
+#: built/mapboxaforwpadvanced/mapboxadv.php:250
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:214
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:50
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:230
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:250
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:214
+#: mapboxadv.php:269 mapboxwidgetadv.php:226
+msgid "Static map"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:51
+#: built/mapboxaforwpadvanced/mapboxadv.php:255
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:310
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:51
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:255
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:310
+#: mapboxadv.php:81 mapboxadv.php:294 mapboxwidgetadv.php:322
+msgid "Controls"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:54
+#: built/mapboxaforwpadvanced/mapboxadv.php:273
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:451
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:54
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:273
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:451
+#: mapboxadv.php:87 mapboxadv.php:314 mapboxwidgetadv.php:475
+#: premium/mapboxwmslayers.php:300
+msgid "Layers"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:55
+#: built/mapboxaforwpadvanced/mapboxadv.php:281
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:476
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:55
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:281
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:476
+#: mapboxadv.php:93 mapboxadv.php:324 mapboxwidgetadv.php:501
+msgid "Features"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:56
+#: built/mapboxaforwpadvanced/mapboxadv.php:288
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:497
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:56
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:288
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:497
+#: mapboxadv.php:85 mapboxadv.php:331 mapboxwidgetadv.php:522
+msgid "Geolocation"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:218
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:218
+#: mapboxadv.php:256
+msgid "Acces Token"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:219
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:219
+#: mapboxadv.php:257
+msgid "Continuous world"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:220
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:220
+#: mapboxadv.php:258
+msgid "Disable touch zoom"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:221
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:221
+#: mapboxadv.php:259
+msgid "Disable drag"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:222
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:222
+#: mapboxadv.php:260
+msgid "Center on marker click"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:223
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:223
+#: mapboxadv.php:261
+msgid "Clusters mode"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:224
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:224
+#: mapboxadv.php:262
+msgid "Clusters color"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:228
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:228
+msgid "Map ID"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:229
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:189
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:229
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:189
+#: mapboxwidgetadv.php:201
+msgid "Map suffix"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:231
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:194
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:231
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:194
+#: mapboxadv.php:275 mapboxwidgetadv.php:206
+msgid "Map width"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:232
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:199
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:232
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:199
+#: mapboxadv.php:276 mapboxwidgetadv.php:211
+msgid "Map height"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:233
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:228
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:233
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:228
+#: mapboxadv.php:277 mapboxwidgetadv.php:240
+msgid "Map padding"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:234
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:234
+#: mapboxadv.php:278
+msgid "Map padding (Top left X)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:235
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:235
+#: mapboxadv.php:279
+msgid "Map padding (Top left Y)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:236
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:243
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:236
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:243
+#: mapboxadv.php:280 mapboxwidgetadv.php:255
+msgid "Map padding (Bottom right X)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:237
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:237
+#: mapboxadv.php:281
+msgid "Map padding (Bottom right Y)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:238
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:238
+#: mapboxadv.php:282
+msgid "Map center (Latitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:239
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:262
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:239
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:262
+#: mapboxadv.php:283 mapboxwidgetadv.php:274
+msgid "Map center (Longitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:240
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:273
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:240
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:273
+#: mapboxadv.php:284 mapboxwidgetadv.php:285
+msgid "Map zoom level"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:241
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:241
+#: mapboxadv.php:285
+msgid "Map min. zoom level"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:242
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:242
+#: mapboxadv.php:286
+msgid "Map max. zoom level"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:243
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:243
+#: mapboxadv.php:287
+msgid "Map bounds (SW Latitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:244
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:244
+#: mapboxadv.php:288
+msgid "Map bounds (SW Longitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:245
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:245
+#: mapboxadv.php:289
+msgid "Map bounds (NE Latitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:246
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:246
+#: mapboxadv.php:290
+msgid "Map bounds (NE Longitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:247
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:204
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:247
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:204
+#: mapboxadv.php:291 mapboxwidgetadv.php:216
+msgid "Fit map to markers"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:251
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:251
+#: mapboxadv.php:271
+msgid "Static map format"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:252
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:252
+#: mapboxadv.php:272
+msgid "Static map for Retina"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:256
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:256
+#: mapboxadv.php:295
+msgid "Zoom control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:257
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:257
+#: mapboxadv.php:296
+msgid "Zoom control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:258
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:258
+#: mapboxadv.php:297
+msgid "Fullscreen control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:259
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:259
+#: mapboxadv.php:298
+msgid "Fullscreeen control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:260
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:260
+#: mapboxadv.php:299
+msgid "Share control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:261
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:362
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:261
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:362
+#: mapboxadv.php:300 mapboxwidgetadv.php:374
+msgid "Share control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:262
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:262
+#: mapboxadv.php:301
+msgid "Geocoder control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:263
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:263
+#: mapboxadv.php:302
+msgid "Geocoder control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:264
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:264
+#: mapboxadv.php:303
+msgid "Geocoder control auto complete"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:265
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:265
+#: mapboxadv.php:304
+msgid "Geocoder control radius (km)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:266
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:433
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:266
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:433
+#: mapboxadv.php:305 mapboxwidgetadv.php:447
+msgid "Legend position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:267
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:421
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:267
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:421
+#: mapboxadv.php:306 mapboxwidgetadv.php:442
+msgid "Legend background color"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:268
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:268
+msgid "Lengend content css"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:270
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:270
+#: mapboxadv.php:311
+msgid "Atribution control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:274
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:453
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:274
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:453
+#: mapboxadv.php:315 mapboxwidgetadv.php:477
+msgid "Tile layer(s) id(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:275
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:457
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:275
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:457
+#: mapboxadv.php:316 mapboxwidgetadv.php:481
+msgid "Tile layer(s) url(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:276
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:276
+msgid "WMS layer(s) base url"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:277
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:277
+msgid "WMS layers(s) url(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:282
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:478
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:282
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:478
+#: mapboxadv.php:325 mapboxwidgetadv.php:503
+msgid "Feature(s) id(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:283
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:482
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:283
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:482
+#: mapboxadv.php:326 mapboxwidgetadv.php:507
+msgid "Feature(s) url(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:284
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:486
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:284
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:486
+#: mapboxadv.php:327 mapboxwidgetadv.php:511
+msgid "Feature(s) url(s) timeout (ms)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:285
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:285
+#: mapboxadv.php:328
+msgid "Feature(s) geoJSON code"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:289
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:289
+#: mapboxadv.php:332
+msgid "Use geolocation"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:290
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:290
+#: mapboxadv.php:333
+msgid "Geolocation high accuracy"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:291
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:291
+#: mapboxadv.php:334
+msgid "Display geolocation marker"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:292
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:292
+#: mapboxadv.php:335
+msgid "Geolocation marker symbol"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:293
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:293
+#: mapboxadv.php:336
+msgid "Geolocation marker size"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:294
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:294
+#: mapboxadv.php:337
+msgid "Geolocation marker color"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:295
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:509
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:295
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:509
+#: mapboxadv.php:338 mapboxwidgetadv.php:534
+msgid "Max. markers distance from geolocation (km)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:296
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:514
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:296
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:514
+#: mapboxadv.php:339 mapboxwidgetadv.php:539
+msgid "Max. radius around geolocation (km)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:297
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:297
+#: mapboxadv.php:340
+msgid "Center map on geolocation"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:298
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:298
+#: mapboxadv.php:341
+msgid "Circle around geolocation"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:319
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:319
+#: mapboxadv.php:362
+msgid "None"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:320
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:320
+#: mapboxadv.php:363
+msgid "Classic"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:321
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:321
+#: mapboxadv.php:364
+msgid "Custom"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:404
+#: built/mapboxaforwpadvanced/mapboxadv.php:413
+#: built/mapboxaforwpadvanced/mapboxadv.php:422
+#: built/mapboxaforwpadvanced/mapboxadv.php:431
+#: built/mapboxaforwpadvanced/mapboxadv.php:443
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:325
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:345
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:365
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:399
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:436
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:404
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:413
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:422
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:431
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:443
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:325
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:345
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:365
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:399
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:436
+#: mapboxadv.php:446 mapboxadv.php:455 mapboxadv.php:464 mapboxadv.php:473
+#: mapboxadv.php:485 mapboxadv.php:497 mapboxwidgetadv.php:337
+#: mapboxwidgetadv.php:357 mapboxwidgetadv.php:377 mapboxwidgetadv.php:411
+#: mapboxwidgetadv.php:450 mapboxwidgetadv.php:460
+msgid "Top left"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:405
+#: built/mapboxaforwpadvanced/mapboxadv.php:414
+#: built/mapboxaforwpadvanced/mapboxadv.php:423
+#: built/mapboxaforwpadvanced/mapboxadv.php:432
+#: built/mapboxaforwpadvanced/mapboxadv.php:444
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:326
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:346
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:366
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:400
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:437
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:405
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:414
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:423
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:432
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:444
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:326
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:346
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:366
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:400
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:437
+#: mapboxadv.php:447 mapboxadv.php:456 mapboxadv.php:465 mapboxadv.php:474
+#: mapboxadv.php:486 mapboxadv.php:498 mapboxwidgetadv.php:338
+#: mapboxwidgetadv.php:358 mapboxwidgetadv.php:378 mapboxwidgetadv.php:412
+#: mapboxwidgetadv.php:451 mapboxwidgetadv.php:461
+msgid "Top right"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:406
+#: built/mapboxaforwpadvanced/mapboxadv.php:415
+#: built/mapboxaforwpadvanced/mapboxadv.php:424
+#: built/mapboxaforwpadvanced/mapboxadv.php:433
+#: built/mapboxaforwpadvanced/mapboxadv.php:445
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:327
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:347
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:367
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:401
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:438
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:406
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:415
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:424
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:433
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:445
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:327
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:347
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:367
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:401
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:438
+#: mapboxadv.php:448 mapboxadv.php:457 mapboxadv.php:466 mapboxadv.php:475
+#: mapboxadv.php:487 mapboxadv.php:499 mapboxwidgetadv.php:339
+#: mapboxwidgetadv.php:359 mapboxwidgetadv.php:379 mapboxwidgetadv.php:413
+#: mapboxwidgetadv.php:452 mapboxwidgetadv.php:462
+msgid "Bottom left"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxadv.php:407
+#: built/mapboxaforwpadvanced/mapboxadv.php:416
+#: built/mapboxaforwpadvanced/mapboxadv.php:425
+#: built/mapboxaforwpadvanced/mapboxadv.php:434
+#: built/mapboxaforwpadvanced/mapboxadv.php:446
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:328
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:348
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:368
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:402
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:439
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:407
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:416
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:425
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:434
+#: builtpremium/mapboxforwpadvanced-premium/mapboxadv.php:446
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:328
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:348
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:368
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:402
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:439
+#: mapboxadv.php:449 mapboxadv.php:458 mapboxadv.php:467 mapboxadv.php:476
+#: mapboxadv.php:488 mapboxadv.php:500 mapboxwidgetadv.php:340
+#: mapboxwidgetadv.php:360 mapboxwidgetadv.php:380 mapboxwidgetadv.php:414
+#: mapboxwidgetadv.php:453 mapboxwidgetadv.php:463
+msgid "Bottom right"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:176
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:176
+#: mapboxwidgetadv.php:188 premium/mapboxmaps.php:238
+#: premium/mapboxwmslayers.php:273
+msgid "Title"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:184
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:184
+#: mapboxwidgetadv.php:196
+msgid "Map Id"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:225
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:225
+#: mapboxwidgetadv.php:237
+msgid "Paddings"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:233
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:233
+#: mapboxwidgetadv.php:245
+msgid "Map padding (Top Left X)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:238
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:238
+#: mapboxwidgetadv.php:250
+msgid "Map padding (Top Left Y)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:248
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:248
+#: mapboxwidgetadv.php:260
+msgid "Map padding (Bottom Right Y)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:254
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:254
+#: mapboxwidgetadv.php:266
+msgid "Center"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:257
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:257
+#: mapboxwidgetadv.php:269
+msgid "Map center (Latittude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:270
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:270
+#: mapboxwidgetadv.php:282
+msgid "Zoom levels"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:278
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:278
+#: mapboxwidgetadv.php:290
+msgid "Minimal zoom level"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:283
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:283
+#: mapboxwidgetadv.php:295
+msgid "Maximal zoom level"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:286
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:286
+#: mapboxwidgetadv.php:298
+msgid "Bounds"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:289
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:289
+#: mapboxwidgetadv.php:301
+msgid "Map bounds (SW latitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:294
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:294
+#: mapboxwidgetadv.php:306
+msgid "Map bounds (SW longitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:299
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:299
+#: mapboxwidgetadv.php:311
+msgid "Map bounds (NE latitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:304
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:304
+#: mapboxwidgetadv.php:316
+msgid "Map bounds (NE longitude)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:313
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:313
+#: mapboxwidgetadv.php:325
+msgid "Add zoom control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:315
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:324
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:335
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:344
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:355
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:364
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:375
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:384
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:398
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:435
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:315
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:324
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:335
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:344
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:355
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:364
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:375
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:384
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:398
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:435
+#: mapboxwidgetadv.php:327 mapboxwidgetadv.php:336 mapboxwidgetadv.php:347
+#: mapboxwidgetadv.php:356 mapboxwidgetadv.php:367 mapboxwidgetadv.php:376
+#: mapboxwidgetadv.php:387 mapboxwidgetadv.php:396 mapboxwidgetadv.php:410
+#: mapboxwidgetadv.php:449 mapboxwidgetadv.php:459
+msgid "Default"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:316
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:336
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:356
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:376
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:385
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:316
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:336
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:356
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:376
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:385
+#: mapboxwidgetadv.php:328 mapboxwidgetadv.php:348 mapboxwidgetadv.php:368
+#: mapboxwidgetadv.php:388 mapboxwidgetadv.php:397
+msgid "No"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:317
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:337
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:357
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:377
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:386
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:317
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:337
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:357
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:377
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:386
+#: mapboxwidgetadv.php:329 mapboxwidgetadv.php:349 mapboxwidgetadv.php:369
+#: mapboxwidgetadv.php:389 mapboxwidgetadv.php:398
+msgid "Yes"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:322
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:322
+#: mapboxwidgetadv.php:334
+msgid "Map zoom control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:333
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:333
+#: mapboxwidgetadv.php:345
+msgid "Add fullscreen control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:342
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:342
+#: mapboxwidgetadv.php:354
+msgid "Fullscreen control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:353
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:353
+#: mapboxwidgetadv.php:365
+msgid "Add share control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:373
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:373
+#: mapboxwidgetadv.php:385
+msgid "Add geocoder control"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:382
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:382
+#: mapboxwidgetadv.php:394
+msgid "Geocoder control auto completion"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:391
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:391
+#: mapboxwidgetadv.php:403
+msgid "Max. radius around search (km)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:396
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:396
+#: mapboxwidgetadv.php:408
+msgid "Map geocoder control position"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:407
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:407
+#: mapboxwidgetadv.php:419
+msgid "Map title"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:411
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:411
+#: mapboxwidgetadv.php:423
+msgid "Map description"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:415
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:415
+#: mapboxwidgetadv.php:427 premium/mapboxmaps.php:274
+#: premium/mapboxwmslayers.php:318
+msgid "Legend content"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:427
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:427
+#: mapboxwidgetadv.php:437
+msgid "Legend content style"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:461
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:461
+msgid "WMS base layer(s) url"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:465
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:465
+msgid "WMS layer(s) url(s)"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:490
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:490
+#: mapboxwidgetadv.php:515
+msgid "Feature(s) code"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:500
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:500
+#: mapboxwidgetadv.php:525
+msgid "Geolocate the visitor "
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:519
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:519
+#: mapboxwidgetadv.php:544
+msgid "Center on gelocation marker"
+msgstr ""
+
+#: built/mapboxaforwpadvanced/mapboxwidgetadv.php:528
+#: builtpremium/mapboxforwpadvanced-premium/mapboxwidgetadv.php:528
+#: mapboxwidgetadv.php:553
+msgid "Circle around gelocation marker"
+msgstr ""
+
+#: mapboxadv.php:76
+msgid "Maps"
+msgstr ""
+
+#: mapboxadv.php:77 mapboxadv.php:90
+msgid "Add new"
+msgstr ""
+
+#: mapboxadv.php:89
+msgid "WMS Layers"
+msgstr ""
+
+#: mapboxadv.php:307
+msgid "Legend default css"
+msgstr ""
+
+#: mapboxadv.php:309
+msgid "Layers(s) control position"
+msgstr ""
+
+#: mapboxwidgetadv.php:457
+msgid "Layers control position"
+msgstr ""
+
+#: mapboxwidgetadv.php:485
+msgid "WMS layer(s)"
+msgstr ""
+
+#: mapboxwidgetadv.php:489
+msgid "WMS default layer"
+msgstr ""
+
+#: poubelle/mapboxwidget.php:37
+msgid "Title:"
+msgstr ""
+
+#: premium/mapboxmaps.php:163
+msgid "Map was successfully saved"
+msgstr ""
+
+#: premium/mapboxmaps.php:165
+msgid "There was an error while saving maps"
+msgstr ""
+
+#: premium/mapboxmaps.php:170
+msgid "Map was successfully updated"
+msgstr ""
+
+#: premium/mapboxmaps.php:172
+msgid "There was an error while updating maps"
+msgstr ""
+
+#: premium/mapboxmaps.php:188
+msgid "Map not found"
+msgstr ""
+
+#: premium/mapboxmaps.php:200 premium/mapboxwmslayers.php:235
+msgid "back to list"
+msgstr ""
+
+#: premium/mapboxmaps.php:220 premium/mapboxwmslayers.php:255
+msgid "Save"
+msgstr ""
+
+#: premium/mapboxmaps.php:242 premium/mapboxwmslayers.php:277
+msgid "Your title"
+msgstr ""
+
+#: premium/mapboxmaps.php:247 premium/mapboxwmslayers.php:282
+msgid "Description"
+msgstr ""
+
+#: premium/mapboxmaps.php:251 premium/mapboxwmslayers.php:286
+msgid "Your description"
+msgstr ""
+
+#: premium/mapboxmaps.php:256
+msgid "Mapbox id"
+msgstr ""
+
+#: premium/mapboxmaps.php:260
+msgid "Your Mapbox ID"
+msgstr ""
+
+#: premium/mapboxmaps.php:265
+msgid "Suffix"
+msgstr ""
+
+#: premium/mapboxmaps.php:269
+msgid "Your suffix"
+msgstr ""
+
+#: premium/mapboxmaps.php:285 premium/mapboxwmslayers.php:329
+msgid "Legend css"
+msgstr ""
+
+#: premium/mapboxmaps.php:288 premium/mapboxwmslayers.php:332
+msgid "Your legend css"
+msgstr ""
+
+#: premium/mapboxmaps.php:299 premium/mapboxwmslayers.php:344
+msgid "Title is required"
+msgstr ""
+
+#: premium/mapboxmaps.php:300
+msgid "Mapbox ID is required"
+msgstr ""
+
+#: premium/mapboxmaps.php:444 premium/mapboxwmslayers.php:503
+msgid "Edit"
+msgstr ""
+
+#: premium/mapboxmaps.php:445 premium/mapboxwmslayers.php:504
+msgid "Delete"
+msgstr ""
+
+#: premium/mapboxmaps.php:479
+msgid "No maps found."
+msgstr ""
+
+#: premium/mapboxwmslayers.php:196
+msgid "WMS layer was successfully saved"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:198
+msgid "There was an error while saving WMS layer"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:203
+msgid "WMS layer was successfully updated"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:205
+msgid "There was an error while updating WMS layer"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:221
+msgid "WMS layer not found"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:234
+msgid "WMS Layer"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:291
+msgid "Base"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:295
+msgid "Your base"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:304
+msgid "Your layers"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:309
+msgid "Opacity"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:313
+msgid "Your opacity"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:346
+msgid "Base is required"
+msgstr ""
+
+#: premium/mapboxwmslayers.php:538
+msgid "No WMS layers found."
+msgstr ""
