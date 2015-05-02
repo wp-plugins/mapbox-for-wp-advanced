@@ -8,7 +8,7 @@ Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Mapbox for WP Advanced displays rich and beautiful Mapbox maps in your WordPress websites with a lot of powerful features but no coding!
+[Mapbox for WP Advanced](http://mapbox-for-wordpress.stephanemartinw.com "Mapbox for WP Advanced plugin") displays rich and beautiful Mapbox maps in your WordPress websites with a lot of powerful features but no coding!
 
 == Description ==
 
