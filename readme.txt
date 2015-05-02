@@ -15,10 +15,12 @@ Mapbox for WP Advanced displays rich and beautiful Mapbox maps in your WordPress
 The plugin **Mapbox for WP Advanced** allows you to quickly and easily display rich and beautiful styled maps, tailored to the style of your WordPress website.
 
 **Do you know MapBox ?**
+
 This platform is build on the famous Leaflet library, an Open-Source JavaScript Library for Mobile-Friendly Interactive Maps that has all the features needed for online maps and that works efficiently across all major desktop and mobile platforms. Moreover, Mapbox is powered by open data from OpenStreetMap, the ‘Wikipedia of maps’.
 
 
 **Mapbox for WP Advanced is very easy to use**
+
 Create your (free) account on [mapbox.com](http://www.mapbox.com "mapbox.com") and start to create your map online with Mapbox Editor: choose the map type, set your customized colors, define your markers on the map, then grab your access token, map ID and you are now ready to integrate your map on your WordPress website!
 To go further, build rich and complex maps with [Mapbox Studio](https://www.mapbox.com/mapbox-studio/#darwin "Mapbox Studio").
 
@@ -33,10 +35,12 @@ With Mapbox for WP Advanced, you acces to the power of Mapbox without writing a 
 
 
 **A live demo site**
+
 A [live demo](http://mapbox-for-wordpress.stephanemartinw.com "Mapbox for WP Advanced livedemo site") is available.
 
 
 **Premium access**
+
 Mapbox for WP Advanced proposes a [Premium Access](http://mapbox-for-wordpress.stephanemartinw.comdownload "Premium Access for Mapbox for WP Advanced") :
 
 * a lot of additionnal features;
