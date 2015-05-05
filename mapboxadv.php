@@ -16,9 +16,9 @@ include_once plugin_dir_path( __FILE__ ).'/mapboxadvhelper.php';
 include_once plugin_dir_path( __FILE__ ).'/default.php';
 
 include_once plugin_dir_path( __FILE__ ).'/mapboxwidgetadv.php';
+include_once plugin_dir_path( __FILE__ ).'/mapboxmaps.php';
 
 if (mapboxadv_isPremium()) {
-    include_once plugin_dir_path( __FILE__ ).'/mapboxmaps.php';
     include_once plugin_dir_path( __FILE__ ).'/mapboxwmslayers.php';
 }
 
