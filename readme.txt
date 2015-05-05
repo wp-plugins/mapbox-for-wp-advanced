@@ -72,6 +72,7 @@ If you have questions or issues, or if you you want to suggest a new feature for
 == Changelog ==
 
 = 1.0 =
-* Intial version.
+* Initial version.
+* Invalid callback function ‘maps_page_handler’ error has been fixed.
 
 == Upgrade Notice ==
