@@ -3,7 +3,7 @@ Contributors: stephanemartinw
 Donate link: http:mapbox-for-wordpress.stephanemartinw.com
 Tags: mapbox, maps, openstreetmap
 Requires at least: 3.0.1
-Tested up to: 4.2.1
+Tested up to: 4.2.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -70,6 +70,9 @@ If you have questions or issues, or if you you want to suggest a new feature for
 2. In the WP admin panel, define all you Mapbox maps default parameters and use or override them in the Mapbbox for Wordpress widget panel or in a shortcode within a post.
 
 == Changelog ==
+
+= 1.0.1 =
+* Fix clusters of markers display.
 
 = 1.0 =
 * Initial version.

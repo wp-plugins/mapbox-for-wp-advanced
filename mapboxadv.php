@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: MapBox for WP Advanced
+Plugin Name: Mapbox for WP Advanced
 Plugin URI: http://mapbox-for-wordpress.stephanemartinw.com
 Description: 
 Version: 1.0.0
@@ -377,7 +377,7 @@ class Mapboxadv
      public function general_zoom_html()
     { ?><input type="text" id="mapbox_default_mapzoom" name="mapbox_default_mapzoom" value="<?php echo get_option('mapbox_default_mapzoom',0)?>"/><?php }
      public function general_minzoom_html()
-    { ?><input type="text" id="mapbox_default_mapminzoom" name="mapbox_default_mapminzoom" value="<?php echo get_option('mapbox_default_mapminzoom',5)?>"/><?php }
+    { ?><input type="text" id="mapbox_default_mapminzoom" name="mapbox_default_mapminzoom" value="<?php echo get_option('mapbox_default_mapminzoom',1)?>"/><?php }
      public function general_maxzoom_html()
     { ?><input type="text" id="mapbox_default_mapmaxzoom" name="mapbox_default_mapmaxzoom" value="<?php echo get_option('mapbox_default_mapmaxzoom',16)?>"/><?php }    
     public function general_maxboundsswlat_html()

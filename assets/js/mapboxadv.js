@@ -4,6 +4,10 @@ var maps={};
 jQuery(window).load(function() {
 
     var pleasegeolocate = false;
+    
+    L.mapbox.accessToken = WPMapbox.mapaccesstoken;
+    L.mapbox.config.FORCE_HTTPS = true;
+    L.mapbox.config.HTTPS_URL = 'https://api.tiles.mapbox.com' + '/v4';
 
     // Iterate through each map to get corresponding params
     jQuery('.mapbox-map').each(function(i) {
@@ -97,7 +101,7 @@ jQuery(window).load(function() {
         maps[index].mapgeolocatemaxradiuskm =  convertStrToInt(mapbox.data('mapgeolocatemaxradiuskm'));
         maps[index].geolocationisinradius = false;
 
-        maps[index].mapfittomarkers =  mapbox.data('mapfittomarkers');
+        maps[index].mapfittomarkers = mapbox.data('mapfittomarkers');
         maps[index].mapmaxradiuskm =  mapbox.data('mapmaxradiuskm');
         
         //maps[index].group = null;
@@ -108,9 +112,9 @@ jQuery(window).load(function() {
         maps[index].maplayersids = mapbox.data('maplayersids');
         maps[index].maplayersurls = mapbox.data('maplayersurls');
         //maps[index].maplayerscode = mapbox.data('maplayerscode');     
+        
         maps[index].mapwmslayers = mapbox.data('mapwmslayers');
         maps[index].mapwmslayersdefault = mapbox.data('mapwmslayersdefault');
-        //maps[index].mapwmslayersopacity = mapbox.data('mapwmslayersopacity');
 
         maps[index].mapfeaturesids = mapbox.data('mapfeaturesids');
         maps[index].mapfeaturesurls = mapbox.data('mapfeaturesurls');
@@ -146,19 +150,27 @@ function prepareDynamicMap(map) {
 
     //map options for creation
     var mapoptions={};
-    mapoptions.accessToken= map.accesstoken;
+    
+    //mapoptions.accessToken= map.accesstoken;
     if (!map.mapcontinuousworld) 
-    // These options apply to the tile layer in the map.
-    mapoptions.tileLayer= {          
-    // This option disables loading tiles outside of the world bounds.
-    noWrap: true
-    };
-    mapoptions.maxBounds = map.mapmaxbounds;         
+        // These options apply to the tile layer in the map.
+        mapoptions.tileLayer= {          
+        // This option disables loading tiles outside of the world bounds.
+        noWrap: true
+        };
+    
+    mapoptions.maxBounds = map.mapmaxbounds;  
+    
     if ( map.mapminzoom>0) mapoptions.minZoom= map.mapminzoom ;
     if ( map.mapmaxzoom >0) mapoptions.maxZoom= map.mapmaxzoom ;
 
     mapoptions.attributioncontrol=map.mapattributioncontrol ; 
     map.lmap = L.mapbox.map(canvaspreffix+'-'+map.mapinternid, map.mapboxid, mapoptions); 
+    //L.mapbox.featureLayer(map.mapboxid).on('ready', function(e) {
+    
+    //additionnal layers 
+    addLayers(map);
+    
     map.lmap.featureLayer.on('ready', function(e) {
 
        var id = e.target._geojson.id;
@@ -168,49 +180,41 @@ function prepareDynamicMap(map) {
            var containerid=container.attr('id');
            internid=containerid.substr(canvaspreffix.length+1);
        }
-
        var thismap = maps[internid];
-       var markerlayer = this; 
+       var thislayer = this; 
+
+        //additionnal features
+        addFeatures(thismap);    
         
-        //layers 
-        addLayers(map);
-
-        //features
-        addFeatures(map);
-
-       //get markers (from all layers of the map, to include those from addFeatures)
-       thismap.markers = [];
-       thismap.lmap.eachLayer(function(marker) { 
-         if (marker instanceof L.Marker) {
-         //default
-         marker.isinbounds =true;
-         thismap.markers.push(marker); 
-         }
-       });
-
-       //thismap.group = null;
-       //thismap.mapmarkersbounds = null;
-       //thismap.mapmaxbounds = null;
-
-       if (thismap.markers.length>0) {
+        //get markers
+        thismap.markers = [];
+        thismap.lmap.eachLayer(function(marker) { 
+            if (marker instanceof L.Marker) {
+                //default
+                marker.isinbounds =true;
+                thismap.markers.push(marker); 
+            }
+        });
+        
+        if (thismap.markers.length>0) {
             var markersgroup = new L.featureGroup(thismap.markers);
             thismap.mapmarkersbounds = markersgroup.getBounds(); 
         }	
         
-        thismap.geolocationLatLng=null;
-
         //clusters
-        if (thismap.mapclustermode!='none') addClusterMarkers(thismap, e);
-        
-        //map is ready, geolocate or finalize
+        addClusterMarkers(thismap, e);
+       
+         //map is ready, geolocate or finalize        
+        thismap.geolocationLatLng=null;
         if (map.mapuselocation) getLocation();
         else updateMap(thismap);
+          
     });
-    
+
     //Centering marker on click ?
     if (map.mapcenteronmarkerclick) {
         map.lmap.featureLayer.on('click', function(e) {
-        map.lmap.panTo(e.layer.getLatLng());
+            map.lmap.panTo(e.layer.getLatLng());
         });
     }
     
@@ -251,23 +255,17 @@ function prepareDynamicMap(map) {
 function prepareStaticMap(map) {
 
     if (!map.mapstaticmap) return; 
-    
-     //map.markers = [];
-
-    //map.group = null;
-    //map.mapmarkersbounds = null;
-    //map.mapmaxbounds = null;
-
-    //map.geolocationLatLng=null;
 
     //map is ready, finalize
     updateMap(map);
 }
 
-function clusterMarkers(map,event) {
+function addClusterMarkers(map, event) {
 
+    if (map.mapclustermode=='none') return false; 
+    
     var clusterGroup=null;
-    if (map.mapclustermode==1) clusterGroup = new L.MarkerClusterGroup();
+    if (map.mapclustermode=='classic') clusterGroup = new L.MarkerClusterGroup();
     else clusterGroup = new L.MarkerClusterGroup({
       // The iconCreateFunction takes the cluster as an argument and returns
       // an icon that represents it. We use L.mapbox.marker.icon in this
@@ -277,18 +275,23 @@ function clusterMarkers(map,event) {
           // show the number of markers in the cluster on the icon.
           'marker-symbol': cluster.getChildCount(),
           'marker-color': map.mapclustercolor,
-        }, {accessToken: map.accesstoken});
+        }/*, {accessToken: map.accesstoken}*/);
       }
     });
     
     event.target.eachLayer(function(layer) {
         clusterGroup.addLayer(layer);
+        //???
+        map.lmap.removeLayer(layer);
     });
+    
     map.lmap.addLayer(clusterGroup);
+    
+    return true;
 }
 
 function addShareControl(map) {
-    share = new L.mapbox.shareControl(null,{accessToken: map.accesstoken});
+    share = new L.mapbox.shareControl(null/*,{accessToken: map.accesstoken}*/);
     if (map.mapsharecontrolposition!='default') share.setPosition(map.mapsharecontrolposition);
     
     share.addTo(map.lmap);
@@ -303,10 +306,10 @@ function addFullscreenControl(map) {
 
 function addZoomControl(map) {
     if (map.mapzoomcontrolposition!='default')
-        new L.Control.Zoom({ position: map.mapzoomcontrolposition, 
-                        accessToken: map.accesstoken}).addTo(map.lmap);
+        new L.Control.Zoom({ position: map.mapzoomcontrolposition/*, 
+                        accessToken: map.accesstoken*/}).addTo(map.lmap);
     else 
-        new L.Control.Zoom({accessToken: map.accesstoken}).addTo(map.lmap);
+        new L.Control.Zoom(/*{accessToken: map.accesstoken}*/).addTo(map.lmap);
 }
 
 function addGeocoderControl(map) {
@@ -316,11 +319,11 @@ function addGeocoderControl(map) {
     geocoder = new L.mapbox.geocoderControl('mapbox.places', {
     autocomplete: map.mapgeocodercontrolautoc,
         position: map.mapgeocodercontrolposition,
-        accessToken: map.accesstoken,
+        /*accessToken: map.accesstoken,*/
     }).addTo(map.lmap);
     else geocoder = new L.mapbox.geocoderControl('mapbox.places', {
         autocomplete: map.mapgeocodercontrolautoc,
-        accessToken: map.accesstoken,
+        /*accessToken: map.accesstoken,*/
     }).addTo(map.lmap);
    
      geocoder.on('select', function(res) {
@@ -354,11 +357,11 @@ function addLegendControl(map, container, bloc) {
             if (map.maplegendposition!='default')
                 legendcontrol=new L.mapbox.legendControl( {
                 position: map.maplegendposition,
-                accessToken: map.accesstoken,
+                /*accessToken: map.accesstoken,*/
                 }).addTo(map.lmap);
             else 
                 legendcontrol=new L.mapbox.legendControl( {
-                accessToken: map.accesstoken,
+                /*accessToken: map.accesstoken,*/
                 }).addTo(map.lmap);
     
             legendcontrol.addLegend(legendwrapper.prop('outerHTML'));
@@ -431,7 +434,7 @@ function addLocationMarker_mapboxicon (map) {
             'marker-size': map.maplocationmarkersize,
             'marker-symbol': map.maplocationmarkersymbol, 
             'marker-color':  map.maplocationmarkercolor,
-        }, {accessToken: map.accesstoken});
+        }/*, {accessToken: map.accesstoken}*/);
         L.marker([map.geolocationLatLng.lat,map.geolocationLatLng.lng ], {icon: locationIcon}).addTo(map.lmap);
         
         if (map.mapcirclearoundlocation) {
@@ -545,6 +548,7 @@ function zoomAndCenterMap(map) {
     else { 
         if (map.mapzoom>0) map.lmap.setView(map.mapcenter, map.mapzoom);
         else map.lmap.setView(map.mapcenter);
+        
         //force refresh
         map.lmap.invalidateSize(true);
     }
@@ -559,7 +563,7 @@ function fitMapToBounds (map, bounds)
     }
     else {
         if ((typeof(bounds)!=='undefined') && (bounds!==null) && (bounds.isValid())) {
-
+            
             //Center is set by the fit bounds effect....
             //then fit...
             //Convert % to pixels
@@ -606,7 +610,7 @@ function fitMapToBounds (map, bounds)
                 else paddingbry = convertStrToInt(paddingbry);
             }
 
-            if (paddingbrx!==0 || paddingbry!==0) paddingbrpoint = new L.Point(paddingbrx, paddingbry);	
+            if (paddingbrx!==0 || paddingbry!==0) paddingbrpoint = new L.Point(paddingbrx, paddingbry);
 
             if (paddingtlpoint || paddingbrpoint) {
                 map.lmap.fitBounds(bounds, {paddingTopLeft:paddingtlpoint, paddingBottomRight:paddingbrpoint});
@@ -614,7 +618,7 @@ function fitMapToBounds (map, bounds)
             else {
                 map.lmap.fitBounds(bounds);
             }
-
+  
             //force refresh
             map.lmap.invalidateSize(true);
         }   

@@ -1,15 +1,17 @@
 <?php 
 
+include_once plugin_dir_path( __FILE__ ).'/mapboxadvhelper.php';
+
 class Mapbox_Builder {
     
     protected $params=null;
     
     public function __construct()
     {   
-        //open source 2.1.5 mapbox.js scripts
-        wp_register_script('mapboxjs', 'http://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.js', false, '1.3.2');
+        //open source mapbox.js scripts
+        wp_register_script('mapboxjs', 'http://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js', false, '1.3.2');
         wp_enqueue_script('mapboxjs'); 
-        wp_register_style('mapboxcss', 'http://api.tiles.mapbox.com/mapbox.js/v2.1.8/mapbox.css' );
+        wp_register_style('mapboxcss', 'http://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.css' );
         wp_enqueue_style('mapboxcss');
     }
     
@@ -124,7 +126,7 @@ class Mapbox_Builder {
             $this->params['mapstaticmapretinasuffix']='@2x';
 
         if ($this->params['mapfittomarkers']=='default') 
-            $this->params['mapfittomarkers']=get_option('mapbox_default_mapfittomarkers',false);
+            $this->params['mapfittomarkers']=get_option('mapbox_default_mapfittomarkers', false);
      
         if ($this->params['mapzoomcontrol']=='default') 
             $this->params['mapzoomcontrol']=get_option('mapbox_default_mapzoomcontrol', false);
@@ -165,7 +167,7 @@ class Mapbox_Builder {
         if ($this->params['maplayerscontrolposition']=='default') 
         $this->params['maplayerscontrolposition']=get_option('mapbox_default_maplayerscontrolposition', 'topright');
 
-        if ($this->params['mapuselocation']=='default') 
+        if (($this->params['mapuselocation']===null) || ($this->params['mapuselocation']=='default'))
         $this->params['mapuselocation']=get_option('mapbox_default_mapuselocation', false);
 
         if ($this->params['mapcenteronlocation']=='default') 
