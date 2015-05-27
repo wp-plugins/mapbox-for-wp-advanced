@@ -71,11 +71,9 @@ If you have questions or issues, or if you you want to suggest a new feature for
 
 == Changelog ==
 
-= 1.0.1 =
-* Fix clusters of markers display.
-
 = 1.0 =
 * Initial version.
 * Invalid callback function ‘maps_page_handler’ error has been fixed.
+* Clusters of markers are now displayed.
 
 == Upgrade Notice ==
