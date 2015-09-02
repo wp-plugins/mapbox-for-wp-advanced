@@ -28,6 +28,7 @@ function mapboxadv_maps_install()
 {
     global $wpdb;
     global $custom_table_example_db_version;
+    global $mapboxadv_db_version;
 
     $table_name = $wpdb->prefix . 'mapboxadv_maps'; // do not forget about tables prefix
 
