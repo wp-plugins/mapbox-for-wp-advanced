@@ -8,6 +8,10 @@ class Mapbox_Builder {
     
     public function __construct()
     {   
+    }
+
+    public function init_plugin_sources()
+    {
         //open source mapbox.js scripts
         wp_register_script('mapboxjs', 'http://api.tiles.mapbox.com/mapbox.js/v2.1.9/mapbox.js', false, '1.3.2');
         wp_enqueue_script('mapboxjs'); 

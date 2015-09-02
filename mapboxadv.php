@@ -43,20 +43,20 @@ class Mapboxadv
         
         //test meta boxes
         //add_action( 'add_meta_boxes', 'dynamic_add_custom_box' );
-        
+        include_once plugin_dir_path( __FILE__ ).'shortcut.php';
+        new Mapboxadv_Shorcut();
+    }
+
+    public function init_plugin_sources()
+    {
          //general css
         //can be completed below by inline css
         wp_register_style('mapboxadvcss', plugins_url('/assets/css/mapboxadv-min.css', __FILE__) );
         wp_enqueue_style('mapboxadvcss');
 
-                
-         //legend
-         $defaultmaplegendcontentcss=get_option('mapbox_default_maplegendcontentcss', ''); 
-         wp_add_inline_style( 'mapboxadvcss', Mapboxadv::minify($defaultmaplegendcontentcss));
-
-     
-        include_once plugin_dir_path( __FILE__ ).'shortcut.php';
-        new Mapboxadv_Shorcut();
+        //legend
+        $defaultmaplegendcontentcss=get_option('mapbox_default_maplegendcontentcss', '');
+        wp_add_inline_style( 'mapboxadvcss', Mapboxadv::minify($defaultmaplegendcontentcss));
     }
     
 
