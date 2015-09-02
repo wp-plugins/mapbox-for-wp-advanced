@@ -12,39 +12,39 @@ include_once plugin_dir_path( __FILE__ ).'/mapboxadvhelper.php';
 include_once plugin_dir_path( __FILE__ ).'/default.php';
 
 class Mapboxadv_Widget extends WP_Widget
-{  
+{
     protected $wbuilder = null;
 
     public function __construct()
-    {   
+    {
         load_plugin_textdomain('mapboxadv', false, basename( dirname( __FILE__ ) ) . '/languages' );
 
         //widget builder
         $this->wbuilder = new Mapbox_Builder();
-     
+
         parent::__construct('Mapboxadv', 'Mapbox for WP Advanced', array('description' => 'Mapbox for WP Advanced'));
     }
 
     public function widget($args, $instance)
     {
-  
+
         //wp_register_style('mapboxadvcss', plugins_url('mapboxadv.css', __FILE__) );
         //wp_enqueue_style('mapboxadvcss');
 
-             
+
         echo apply_filters('widget_title', $instance['title']);
-       
+
         $this->wbuilder->init($instance);
-    
+
         $html = array();
         $html[] = $content;
         $html[] = $this->wbuilder->gethtml();
-        
-        echo implode('', $html);  
+
+        echo implode('', $html);
         //$htmlstr = implode('', $html);
         //return $htmlstr;
     }
-    
+
 //to do
 // update widget
 /*function update($new_instance, $old_instance) {
@@ -56,7 +56,7 @@ class Mapboxadv_Widget extends WP_Widget
       $instance['checkbox'] = strip_tags($new_instance['checkbox']);
      return $instance;
 }*/
-    
+
     public function form($instance)
     {
         $default_settings = array(
@@ -73,20 +73,20 @@ class Mapboxadv_Widget extends WP_Widget
             'mappaddingbrx' => '',
             'mappaddingbry' => '',
             'mapzoomcontrol' => 'default',
-            'mapzoomcontrolposition' => 'default', 
+            'mapzoomcontrolposition' => 'default',
             'mapcenterlat' => '',
             'mapcenterlng' => '',
-            'mapzoom' => '', 
+            'mapzoom' => '',
             'mapminzoom' => '',
             'mapmaxzoom' => '',
             'mapmaxboundsswlat' => '',
             'mapmaxboundsswlng' => '',
             'mapmaxboundsnelat' => '',
             'mapmaxboundsnelng' => '',
-            'mapfullscreencontrol' => 'default', 
+            'mapfullscreencontrol' => 'default',
             'mapfullscreencontrolposition' => 'default',
             'mapsharecontrol' => 'default',
-            'mapsharecontrolposition' => 'default', 
+            'mapsharecontrolposition' => 'default',
             'mapgeocodercontrol' => 'default',
             'mapgeocodercontrolposition' => 'default',
             'mapgeocodercontrolautoc' => 'default',
@@ -101,13 +101,13 @@ class Mapboxadv_Widget extends WP_Widget
             'mapgeolocatemaxradiuskm' => '',
             'mapcenteronlocation' => 'default',
             'mapcirclearoundlocation' => 'default',
-            'mapmaxradiuskm' => '', 
-            'mapfittomarkers' =>'default',  
+            'mapmaxradiuskm' => '',
+            'mapfittomarkers' =>'default',
             'maplayersids' =>'',
             'maplayersurls' => '',
             'mapwmslayers' => '',
             'mapwmslayersdefault' => '',
-            //'maplayerscode' => '',   
+            //'maplayerscode' => '',
             'mapfeaturesids' =>'',
             'mapfeaturesurls' => '',
             'mapfeaturesurlstimeout' => '',
@@ -121,13 +121,13 @@ class Mapboxadv_Widget extends WP_Widget
 
         //Specific widget params
         $title = $instance['title'];
-        
+
         $mapid = $instance['mapid'];
         $mapsuffix = $instance['mapsuffix'];
         $mapboxid = $instance['mapboxid'];
         $mapwidth = $instance['mapwidth'];
-        $mapheight = $instance['mapheight'];  
-        $mapstaticmap = $instance['mapstaticmap'];  
+        $mapheight = $instance['mapheight'];
+        $mapstaticmap = $instance['mapstaticmap'];
         $mappadding = $instance['mappadding'];
         $mappaddingtlx = $instance['mappaddingtlx'];
         $mappaddingtly = $instance['mappaddingtly'];
@@ -139,11 +139,11 @@ class Mapboxadv_Widget extends WP_Widget
         $mapcenterlng = $instance['mapcenterlng'];
         $mapzoom = $instance['mapzoom'];
         $mapminzoom = $instance['mapminzoom'];
-        $mapmaxzoom = $instance['mapmaxzoom'];   
+        $mapmaxzoom = $instance['mapmaxzoom'];
         $mapmaxboundsswlat = $instance['mapmaxboundsswlat'];
         $mapmaxboundsswlng = $instance['mapmaxboundsswlng'];
         $mapmaxboundsnelat = $instance['mapmaxboundsnelat'];
-        $mapmaxboundsnelng = $instance['mapmaxboundsnelng'];   
+        $mapmaxboundsnelng = $instance['mapmaxboundsnelng'];
         $mapfullscreencontrol = $instance['mapfullscreencontrol'];
         $mapfullscreencontrolposition = $instance['mapfullscreencontrolposition'];
         $mapsharecontrol = $instance['mapsharecontrol'];
@@ -155,17 +155,17 @@ class Mapboxadv_Widget extends WP_Widget
         $maplegendposition = $instance['maplegendposition'];
         $maplegendbackgroundcolor = $instance['maplegendbackgroundcolor'];
         $maplegendcontent= $instance['maplegendcontent'];
-        $maplegendcontentcss= $instance['maplegendcontentcss'];   
+        $maplegendcontentcss= $instance['maplegendcontentcss'];
         $maplayerscontrolposition = $instance['maplayerscontrolposition'];
         $maptitle=$instance['maptitle'];
         $mapdescription=$instance['mapdescription'];
-        $mapuselocation= $instance['mapuselocation']; 
+        $mapuselocation= $instance['mapuselocation'];
         $mapgeolocatemaxradiuskm= $instance['mapgeolocatemaxradiuskm'];
-        $mapcenteronlocation= $instance['mapcenteronlocation']; 
-        $mapcirclearoundlocation= $instance['mapcirclearoundlocation']; 
-        $mapmaxradiuskm= $instance['mapmaxradiuskm']; 
+        $mapcenteronlocation= $instance['mapcenteronlocation'];
+        $mapcirclearoundlocation= $instance['mapcirclearoundlocation'];
+        $mapmaxradiuskm= $instance['mapmaxradiuskm'];
         $mapfittomarkers= $instance['mapfittomarkers'];
-        
+
         $maplayersids = $instance['maplayersids'];
         $maplayersurls = $instance['maplayersurls'];
         //$mapwmslayersbaseurl = $instance['mapwmslayersbaseurl'];
@@ -173,7 +173,7 @@ class Mapboxadv_Widget extends WP_Widget
         $mapwmslayers = $instance['mapwmslayers'];
         $mapwmslayersdefault = $instance['mapwmslayersdefault'];
         //$mapwmslayersopacity = $instance['mapwmslayersopacity'];
-        
+
         //$maplayerscode = $instance['maplayerscode'];
         $mapfeaturesids = $instance['mapfeaturesids'];
         $mapfeaturesurls = $instance['mapfeaturesurls'];
@@ -219,17 +219,17 @@ class Mapboxadv_Widget extends WP_Widget
         <option <?php selected($instance['mapfittomarkers'], 'false'); ?> value="false">No</option>
         <option <?php selected($instance['mapfittomarkers'], 'true'); ?> value="true">Yes</option>
         </select>
-            
+
         </p>
         <!-- map static -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapstaticmap' ); ?>"><?php _e( 'Static map','mapboxadv' ); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapstaticmap' ); ?>"><?php _e( 'Static map','mapboxadv' ); ?></label>
         <select id="<?php echo $this->get_field_id( 'mapstaticmap' ); ?>" name="<?php echo $this->get_field_name( 'mapstaticmap' ); ?>">
         <option <?php selected($instance['mapstaticmap'], 'default'); ?> value="default">Default</option>
         <option <?php selected($instance['mapstaticmap'], 'false'); ?> value="false">No</option>
         <option <?php selected($instance['mapstaticmap'], 'true'); ?> value="true">Yes</option>
         </select>
-            
+
         </p>
          <!------------------------------
         Paddings
@@ -322,7 +322,7 @@ class Mapboxadv_Widget extends WP_Widget
         <span class="spacer"><?php _e( 'Controls', 'mapboxadv' ); ?></span><hr/>
         <!-- map zoom control -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapzoomcontrol' ); ?>"><?php _e( 'Add zoom control','mapboxadv' ); ?></label>          
+        <label for="<?php echo $this->get_field_name( 'mapzoomcontrol' ); ?>"><?php _e( 'Add zoom control','mapboxadv' ); ?></label>
         <select id="<?php echo $this->get_field_id( 'mapzoomcontrol' ); ?>" name="<?php echo $this->get_field_name( 'mapzoomcontrol' ); ?>">
         <option <?php selected($instance['mapzoomcontrol'], 'default'); ?> value="default"><?php _e('Default', 'mapboxadv');?></option>
         <option <?php selected($instance['mapzoomcontrol'], 'false'); ?> value="false"><?php _e('No', 'mapboxadv');?></option>
@@ -342,7 +342,7 @@ class Mapboxadv_Widget extends WP_Widget
         </p>
          <!-- map fullscreen control -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapfullscreencontrol' ); ?>"><?php _e( 'Add fullscreen control','mapboxadv' ); ?></label>          
+        <label for="<?php echo $this->get_field_name( 'mapfullscreencontrol' ); ?>"><?php _e( 'Add fullscreen control','mapboxadv' ); ?></label>
         <select id="<?php echo $this->get_field_id( 'mapfullscreencontrol' ); ?>" name="<?php echo $this->get_field_name( 'mapfullscreencontrol' ); ?>">
         <option <?php selected($instance['mapfullscreencontrol'], 'default'); ?> value="default"><?php _e('Default', 'mapboxadv');?></option>
         <option <?php selected($instance['mapfullscreencontrol'], 'false'); ?> value="false"><?php _e('No', 'mapboxadv');?></option>
@@ -362,7 +362,7 @@ class Mapboxadv_Widget extends WP_Widget
         </p>
         <!-- map share control -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapsharecontrol' ); ?>"><?php _e( 'Add share control','mapboxadv' ); ?></label>          
+        <label for="<?php echo $this->get_field_name( 'mapsharecontrol' ); ?>"><?php _e( 'Add share control','mapboxadv' ); ?></label>
         <select id="<?php echo $this->get_field_id( 'mapsharecontrol' ); ?>" name="<?php echo $this->get_field_name( 'mapsharecontrol' ); ?>">
         <option <?php selected($instance['mapsharecontrol'], 'default'); ?> value="default"><?php _e('Default', 'mapboxadv');?></option>
         <option <?php selected($instance['mapsharecontrol'], 'false'); ?> value="false"><?php _e('No', 'mapboxadv');?></option>
@@ -382,21 +382,21 @@ class Mapboxadv_Widget extends WP_Widget
         </p>
         <!-- map geocoder control -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapgeocodercontrol' ); ?>"><?php _e( 'Add geocoder control','mapboxadv' ); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapgeocodercontrol' ); ?>"><?php _e( 'Add geocoder control','mapboxadv' ); ?></label>
           <select id="<?php echo $this->get_field_id( 'mapgeocodercontrol' ); ?>" name="<?php echo $this->get_field_name( 'mapgeocodercontrol' ); ?>">
         <option <?php selected($instance['mapgeocodercontrol'], 'default'); ?> value="default"><?php _e('Default', 'mapboxadv');?></option>
         <option <?php selected($instance['mapgeocodercontrol'], 'false'); ?> value="false"><?php _e('No', 'mapboxadv');?></option>
         <option <?php selected($instance['mapgeocodercontrol'], 'true'); ?> value="true"><?php _e('Yes', 'mapboxadv');?></option>
-        </select>     
+        </select>
         </p>
         <!-- map geocoder control auto complete -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapgeocodercontrolautoc' ); ?>"><?php _e( 'Geocoder control auto completion','mapboxadv' ); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapgeocodercontrolautoc' ); ?>"><?php _e( 'Geocoder control auto completion','mapboxadv' ); ?></label>
           <select id="<?php echo $this->get_field_id( 'mapgeocodercontrolautoc' ); ?>" name="<?php echo $this->get_field_name( 'mapgeocodercontrolautoc' ); ?>">
         <option <?php selected($instance['mapgeocodercontrolautoc'], 'default'); ?> value="default"><?php _e('Default', 'mapboxadv');?></option>
         <option <?php selected($instance['mapgeocodercontrolautoc'], 'false'); ?> value="false"><?php _e('No', 'mapboxadv');?></option>
         <option <?php selected($instance['mapgeocodercontrolautoc'], 'true'); ?> value="true"><?php _e('Yes', 'mapboxadv');?></option>
-        </select>       
+        </select>
         </p>
         <!-- map geocoder radius km -->
         <p>
@@ -422,7 +422,7 @@ class Mapboxadv_Widget extends WP_Widget
         <p>
         <label for="<?php echo $this->get_field_id( 'mapdescription' ); ?>"><?php _e( 'Map description','mapboxadv' ); ?></label>
         <textarea class="widefat" rows="16" cols="20" id="<?php echo $this->get_field_id('mapdescription'); ?>" name="<?php echo $this->get_field_name('mapdescription'); ?>"><?php echo $mapdescription; ?></textarea>
-         <!-- legend content 
+         <!-- legend content
         <p>
         <label for="<?php echo $this->get_field_id( 'maplegendcontent' ); ?>"><?php _e( 'Legend content','mapboxadv'); ?></label>
 
@@ -461,7 +461,7 @@ class Mapboxadv_Widget extends WP_Widget
         <option <?php selected($instance['maplayerscontrolposition'], 'topright'); ?> value="topright"><?php _e('Top right', 'mapboxadv');?></option>
         <option <?php selected($instance['maplayerscontrolposition'], 'bottomleft'); ?> value="bottomleft"><?php _e('Bottom left', 'mapboxadv');?></option>
         <option <?php selected($instance['maplayerscontrolposition'], 'bottomright'); ?> value="bottomright"><?php _e('Bottom right', 'mapboxadv');?></option>
-        </select> 
+        </select>
         </p>
 
 <!---------------------------------------------------------------------------------
@@ -489,11 +489,11 @@ Premium zone
         <label for="<?php echo $this->get_field_name( 'mapwmslayersdefault' ); ?>"><?php _e( 'WMS default layer','mapboxadv' ); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id('mapwmslayersdefault'); ?>" name="<?php echo $this->get_field_name('mapwmslayersdefault'); ?>" type="text" value="<?php echo $mapwmslayersdefault; ?>"></input>
         </p>
-       
+
          <!--<p>
         <label for="<php echo $this->get_field_name( 'maplayerscode' ); ?>"><php _e( 'Layer(s) code' ); ?></label>
         <textarea class="widefat" rows="8" cols="20" id="<php echo $this->get_field_id('maplayerscode'); ?>" name="<php echo $this->get_field_name('maplayerscode'); ?>"><php echo $maplayerscode; ?></textarea>-->
-        </p>  
+        </p>
 
         <!------------------------------
         Features
@@ -515,14 +515,14 @@ Premium zone
         <label for="<?php echo $this->get_field_name( 'mapfeaturescode' ); ?>"><?php _e( 'Feature(s) code','mapboxadv' ); ?></label>
         <textarea class="widefat" rows="8" cols="20" id="<?php echo $this->get_field_id('mapfeaturescode'); ?>" name="<?php echo $this->get_field_name('mapfeaturescode'); ?>"><?php echo $mapfeaturescode; ?></textarea>
         </p>
-      
+
         <!------------------------------
         Geolocation
         ------------------------------->
         <span class="spacer"><?php _e( 'Geolocation', 'mapboxadv' ); ?></span><hr/>
          <!-- geolocate -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapuselocation' ); ?>"><?php _e( 'Geolocate the visitor ','mapboxadv' ); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapuselocation' ); ?>"><?php _e( 'Geolocate the visitor ','mapboxadv' ); ?></label>
         <select id="<?php echo $this->get_field_id( 'mapuselocation' ); ?>" name="<?php echo $this->get_field_name( 'mapuselocation' ); ?>">
         <option <?php selected($instance['mapuselocation'], 'default'); ?> value="default">Default</option>
         <option <?php selected($instance['mapuselocation'], 'false'); ?> value="false">No</option>
@@ -541,7 +541,7 @@ Premium zone
         </p>
          <!-- center on click -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapcenteronlocation' ); ?>"><?php _e( 'Center on gelocation marker' ,'mapboxadv'); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapcenteronlocation' ); ?>"><?php _e( 'Center on gelocation marker' ,'mapboxadv'); ?></label>
          <select id="<?php echo $this->get_field_id( 'mapcenteronlocation' ); ?>" name="<?php echo $this->get_field_name( 'mapcenteronlocation' ); ?>">
         <option <?php selected($instance['mapcenteronlocation'], 'default'); ?> value="default">Default</option>
         <option <?php selected($instance['mapcenteronlocation'], 'false'); ?> value="false">No</option>
@@ -550,7 +550,7 @@ Premium zone
         </p>
          <!-- circle around -->
         <p>
-        <label for="<?php echo $this->get_field_name( 'mapcirclearoundlocation' ); ?>"><?php _e( 'Circle around gelocation marker','mapboxadv' ); ?></label>  
+        <label for="<?php echo $this->get_field_name( 'mapcirclearoundlocation' ); ?>"><?php _e( 'Circle around gelocation marker','mapboxadv' ); ?></label>
          <select id="<?php echo $this->get_field_id( 'mapcirclearoundlocation' ); ?>" name="<?php echo $this->get_field_name( 'mapcirclearoundlocation' ); ?>">
         <option <?php selected($instance['mapcirclearoundlocation'], 'default'); ?> value="default">Default</option>
         <option <?php selected($instance['mapcirclearoundlocation'], 'false'); ?> value="false">No</option>

@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 //Sources
 //http://www.paulund.co.uk/wordpress-tables-using-wp_list_table
@@ -9,15 +9,15 @@
 //-------------------------------------------------------------
 //Maps
 //-------------------------------------------------------------
-    
+
 //1 : database
-    
+
  /**
  * $custom_table_example_db_version - holds current database version
  * and used on plugin update to sync database tables
  */
 global $mapboxadv_db_version;
-$mapboxadv_db_version = '1.0'; 
+$mapboxadv_db_version = '1.0';
 /**
  * register_activation_hook implementation
  *
@@ -100,16 +100,16 @@ function mapboxadv_maps_update_db_check()
 }
 
 add_action('plugins_loaded', 'mapboxadv_maps_update_db_check');
-    
+
 
 //2 : admin panels
 
 function maps_page_handler()
 {
-    /*if(isset($_GET['action'] ) && $_GET['action'] == 'edit' &&  isset($_GET['layer']) && $_GET['layer']  != null ){  
+    /*if(isset($_GET['action'] ) && $_GET['action'] == 'edit' &&  isset($_GET['layer']) && $_GET['layer']  != null ){
         $id = $_GET['layer'] ;
-        $this->edit_selected_layer($id);  
-    } else if(isset($_GET['action'] ) && $_GET['action'] == 'delete' &&  isset($_GET['layer']) && $_GET['layer']  != null ){  
+        $this->edit_selected_layer($id);
+    } else if(isset($_GET['action'] ) && $_GET['action'] == 'delete' &&  isset($_GET['layer']) && $_GET['layer']  != null ){
         $id = $_GET['layer'] ;
         $this->delete_selected_layer($id);
     } else { */
@@ -129,7 +129,7 @@ function maps_page_handler()
     <?php
     //}
 }
-   
+
 function maps_form_page_handler() {
 
     global $wpdb;
@@ -188,16 +188,16 @@ function maps_form_page_handler() {
                 $item = $default;
                 $notice = __('Map not found', 'mapboxadv');
             }
-        }          
+        }
     }
 
     // here we adding our custom meta box
     add_meta_box('maps_form_meta_box', 'Map data', 'maps_form_meta_box_handler', 'map', 'normal', 'default');
-    
+
     ?>
     <div class="wrap">
     <div class="icon32 icon32-posts-post" id="icon-edit"><br></div>
-    <h2><?php _e('Map')?> 
+    <h2><?php _e('Map')?>
         <a class="add-new-h2" href="<?php echo get_admin_url(get_current_blog_id(), 'admin.php?page=mapboxadv-maps');?>"><?php _e('back to list', 'mapboxadv')?></a>
     </h2>
 
@@ -225,9 +225,9 @@ function maps_form_page_handler() {
         </form>
 
     </div>
-<?php 
+<?php
 }
-    
+
 function maps_form_meta_box_handler($item)
 {
     ?>
@@ -274,7 +274,7 @@ function maps_form_meta_box_handler($item)
         <th valign="top" scope="row">
             <label for="legendcontent"><?php _e('Legend content', 'mapboxadv')?></label>
         </th>
-        <td>    
+        <td>
             <?php $content =$item['legendcontent'];
             $editor_id = 'legendcontent';
             $settings = array('textarea_name' => 'legendcontent');
@@ -293,7 +293,7 @@ function maps_form_meta_box_handler($item)
     </table>
     <?php
 }
-    
+
 function maps_validate_layer($item)
 {
     $messages = array();
@@ -313,37 +313,37 @@ if( ! class_exists( 'WP_List_Table' ) ) {
  */
 class Maps_List_Table extends WP_List_Table
 {
-    
+
     function __construct(){
         global $status, $page;
-                
+
         //Set parent defaults
         parent::__construct( array(
             'singular'  => 'map',     //singular name of the listed records
             'plural'    => 'maps',    //plural name of the listed records
             'ajax'      => false        //does this table support ajax?
         ) );
-        
+
     }
-    
+
     public function prepare_items()
     {
         global $wpdb;
         $table_name = $wpdb->prefix . 'mapboxadv_maps'; // do not forget about tables prefix
-        
+
         $per_page = 5; // constant, how much records will be shown per page
-        
+
         $columns = $this->get_columns();
         $hidden = $this->get_hidden_columns();
         $sortable = $this->get_sortable_columns();
-        
+
         $this->_column_headers = array($columns, $hidden, $sortable);
-        
+
         $this->process_bulk_action();
-        
+
         // will be used in pagination settings
         $total_items = $wpdb->get_var("SELECT COUNT(id) FROM $table_name");
-             
+
          // prepare query params, as usual current page, order by and order direction
         $paged = isset($_REQUEST['paged']) ? max(0, intval($_REQUEST['paged']) - 1) : 0;
         $orderby = (isset($_REQUEST['orderby']) && in_array($_REQUEST['orderby'], array_keys($this->get_sortable_columns()))) ? $_REQUEST['orderby'] : 'title';
@@ -360,7 +360,7 @@ class Maps_List_Table extends WP_List_Table
             'total_pages' => ceil($total_items / $per_page) // calculate pages count
         ));
     }
-    
+
     public function get_columns()
     {
         $columns = array(
@@ -381,7 +381,7 @@ class Maps_List_Table extends WP_List_Table
     {
         return array('legendcontent', 'legendcss');
     }
-    
+
      public function get_sortable_columns()
     {
         return array('title' => array('title', false));
@@ -403,7 +403,7 @@ class Maps_List_Table extends WP_List_Table
                 return print_r( $item, true ) ;
         }
     }
-    
+
     private function sort_data( $a, $b )
     {
         // Set defaults
@@ -431,7 +431,7 @@ class Maps_List_Table extends WP_List_Table
 
         return -$result;
     }
-    
+
      function column_cb($item){
         return sprintf(
             '<input type="checkbox" name="%1$s[]" value="%2$s" />',
@@ -439,7 +439,7 @@ class Maps_List_Table extends WP_List_Table
             /*$2%s*/ $item['id']                //The value of the checkbox should be the record's id
         );
     }
-    
+
     function column_title($item) {
         $actions = array(
             'edit' => sprintf('<a href="?page=mapboxadv-maps-form&id=%s">%s</a>', $item['id'], __('Edit', 'mapboxadv')),
@@ -448,19 +448,19 @@ class Maps_List_Table extends WP_List_Table
 
         return sprintf('%1$s %2$s', $item['title'], $this->row_actions($actions) );
     }
-    
+
     function get_bulk_actions() {
         $actions = array(
         'delete'    => 'Delete'
         );
         return $actions;
     }
-    
+
      function process_bulk_action() {
-        
+
         //Detect when a bulk action is being triggered...
         if( 'delete'===$this->current_action() ) {
-           
+
             if ('delete' === $this->current_action()) {
             $ids = isset($_REQUEST['id']) ? $_REQUEST['id'] : array();
             if (is_array($ids)) $ids = implode(',', $ids);
@@ -475,7 +475,7 @@ class Maps_List_Table extends WP_List_Table
         }
     }
 
-    
+
     function no_items() {
         _e( 'No maps found.' );
     }
